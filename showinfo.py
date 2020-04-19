@@ -45,8 +45,9 @@ def getRam():
 host = getHostName()
 ip = getIpAddress()
 pubIp= publicIp()
-maxRam = getRam()[0]
-usedRam = getRam()[1]
+ram = getRam()
+maxRam = ram[0]
+usedRam = ram[1]
 
 print(f"""
 Public IP: {colores.OKGREEN + pubIp + colores.ENDC}
